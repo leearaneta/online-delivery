@@ -12,7 +12,6 @@ class UsersController < ApplicationController
   end
 
   def check_delivery_zone
-    binding.pry
     render json: { restaurants: find_restaurants(address_params) }, status: 200
   end
 
@@ -71,7 +70,6 @@ class UsersController < ApplicationController
 
   def available_restaurants(matrix)
     matrix.data.flatten.each_with_index.map do |datum, idx| 
-      binding.pry
       if Restaurant.all[idx].max_distance > datum.distance_in_meters/2000.to_f
         Restaurant.all[idx]
       end
