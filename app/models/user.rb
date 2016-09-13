@@ -9,7 +9,7 @@ class User < ApplicationRecord
   end
 
   def full_address
-   "#{address}, #{city} #{zipcode}"
+    "#{address}, #{zipcode} #{city}, #{country}"
   end
 
   def restaurants
