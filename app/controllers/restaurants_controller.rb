@@ -4,6 +4,10 @@ class RestaurantsController < ApplicationController
    render json: find_restaurants(address_params), status: 200
   end
 
+  def show
+    byebug
+  end
+
   private
 
   def address_params
