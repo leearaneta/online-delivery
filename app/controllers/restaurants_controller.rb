@@ -1,8 +1,7 @@
 class RestaurantsController < ApplicationController
 
   def check_delivery_zone
-    binding.pry
-   render json: { restaurants: find_restaurants(address_params) }, status: 200
+   render json: find_restaurants(address_params), status: 200
   end
 
   private
