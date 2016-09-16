@@ -1,4 +1,4 @@
 class RestaurantCourse < ApplicationRecord
 	belongs_to :restaurant
-  	belongs_to :course
+  belongs_to :course
 end
