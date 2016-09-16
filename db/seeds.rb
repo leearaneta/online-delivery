@@ -8,34 +8,46 @@
 Restaurant.destroy_all
 Item.destroy_all
 User.destroy_all
+RestaurantCourse.destroy_all
+Course.destroy_all
+Category.destroy_all
+RestaurantCategory.destroy_all
 
-bubble_tea = Category.create(name: 'bubble tea')
-sandwiches = Category.create(name: 'sandwiches')
-gelato = Category.create(name: 'gelato')
+coffee = Category.create(name: 'coffee & tea')
+subshop = Category.create(name: 'subshop')
+italian = Category.create(name: 'Italian')
+
+bubble_tea = Course.create(name: 'bubble tea')
+sandwiches = Course.create(name: 'sandwiches')
+gelato = Course.create(name: 'gelato')
 
 kft = Restaurant.create(name: 'kung fun', address: 'Södergatan 5', city: 'Märsta', zipcode: '195 34', country: 'Sweden', max_distance: 3)
+RestaurantCategory.create(restaurant: kft, category: italian)
+RestaurantCategory.create(restaurant: kft, category: coffee)
+RestaurantCourse.create(restaurant: kft, course: bubble_tea)
+RestaurantCourse.create(restaurant: kft, course: sandwiches)
+RestaurantCourse.create(restaurant: kft, course: gelato)
 taro = Item.create(name: 'taro', restaurant: kft, price: 5)
 red_bean = Item.create(name: 'red bean', restaurant: kft, price: 4)
 
 cb = Restaurant.create(name: 'caffe bene', address: 'Nymärstagatan 2', city: 'Märsta', zipcode: '195 30', country: 'Sweden', max_distance: 3)
-RestaurantCategory.create(restaurant: cb, category: bubble_tea)
-RestaurantCategory.create(restaurant: cb, category: sandwiches)
-RestaurantCategory.create(restaurant: cb, category: gelato)
-thai = Item.create(name: 'thai', restaurant: cb, price: 4, category: bubble_tea)
-green_tea = Item.create(name: 'green tea', restaurant: cb, price: 3, category: bubble_tea)
-teriyaki = Item.create(name: 'teriyaki chicken', restaurant: cb, price: 7, category: sandwiches)
-ham_swiss = Item.create(name: 'ham and swiss', restaurant: cb, price: 6, category: sandwiches)
-mango = Item.create(name: 'mango', restaurant: cb, price: 4, category: gelato)
+RestaurantCategory.create(restaurant: cb, category: coffee)
+RestaurantCourse.create(restaurant: cb, course: bubble_tea)
+RestaurantCourse.create(restaurant: cb, course: sandwiches)
+RestaurantCourse.create(restaurant: cb, course: gelato)
+thai = Item.create(name: 'thai', restaurant: cb, price: 4, course: bubble_tea)
+green_tea = Item.create(name: 'green tea', restaurant: cb, price: 3, course: bubble_tea)
+teriyaki = Item.create(name: 'teriyaki chicken', restaurant: cb, price: 7, course: sandwiches)
+ham_swiss = Item.create(name: 'ham and swiss', restaurant: cb, price: 6, course: sandwiches)
+mango = Item.create(name: 'mango', restaurant: cb, price: 4, course: gelato)
+
+
 shish = Restaurant.create(name: 'shish', address: 'Mjölnergatan 16', city: 'Märsta', zipcode: '195 53', country: 'Sweden', max_distance: 1)
+RestaurantCategory.create(restaurant: shish, category: subshop)
+RestaurantCourse.create(restaurant: shish, course: bubble_tea)
+RestaurantCourse.create(restaurant: shish, course: sandwiches)
+RestaurantCourse.create(restaurant: shish, course: gelato)
 coconut = Item.create(name: 'coconut', restaurant: shish, price: 5)
 milk_tea = Item.create(name: 'milk tea', restaurant: shish, price: 3)
 
 lee = User.create(email: 'lee@lee.com', password: 'hi', address: '12 Bartlett St', city: 'New Brunswick', zipcode: '08901')
-
-
-# matrix = GoogleDistanceMatrix::Matrix.new
-#     origin = GoogleDistanceMatrix::Place.new address: "#{User.first.address}, #{User.first.city} #{User.first.zipcode}"
-#     destinations = Restaurant.all.map {|restaurant| "#{restaurant.address}, #{restaurant.city} #{restaurant.zipcode}"}.map {|location| GoogleDistanceMatrix::Place.new address: location}
-#     matrix.origins << origin
-#     destinations.each {|destination| matrix.destinations << destination}
-#     filtered_restaurants = matrix.data.flatten.each_with_index.map {|datum, idx| Restaurant.all[idx].max_distance > datum.distance_in_meters/1000.to_f ? Restaurant.all[idx] : nil}.compact

@@ -54,7 +54,6 @@ class UsersController < ApplicationController
 
   def address_params
     @address = params.require(:address)
-    params.require(:address)
   end
 
   def user_params
