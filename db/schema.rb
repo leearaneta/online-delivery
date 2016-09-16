@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(version: 20160916171127) do
     t.string   "country"
     t.string   "zipcode"
     t.integer  "max_distance"
+    t.string   "logo"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

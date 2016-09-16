@@ -7,6 +7,7 @@ class CreateRestaurants < ActiveRecord::Migration[5.0]
       t.string :country
       t.string :zipcode
       t.integer :max_distance
+      t.string :logo
 
       t.timestamps
     end

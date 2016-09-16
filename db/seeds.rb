@@ -13,6 +13,10 @@ Course.destroy_all
 Category.destroy_all
 RestaurantCategory.destroy_all
 
+kftlogo = 'https://pbs.twimg.com/profile_images/478946624580767744/nmc8l9ig_400x400.png'
+cblogo = 'http://res.heraldm.com/content/image/2016/03/31/20160331001007_0.jpg'
+shishlogo = 'https://s-media-cache-ak0.pinimg.com/564x/a2/23/9a/a2239ad4939e4731b354aae7eee70f3b.jpg'
+
 coffee = Category.create(name: 'coffee & tea')
 subshop = Category.create(name: 'subshop')
 italian = Category.create(name: 'Italian')
