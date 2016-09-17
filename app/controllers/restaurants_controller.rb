@@ -5,7 +5,8 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    byebug
+    restaurant = Restaurant.find(params['id'].to_i)
+    render json: restaurant, status: 200
   end
 
   private
