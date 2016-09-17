@@ -4,6 +4,11 @@ class RestaurantsController < ApplicationController
    render json: find_restaurants(address_params), status: 200
   end
 
+  def show
+    restaurant = Restaurant.find(params['id'].to_i)
+    render json: restaurant, status: 200
+  end
+
   private
 
   def address_params
