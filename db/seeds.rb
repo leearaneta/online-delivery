@@ -25,7 +25,9 @@ bubble_tea = Course.create(name: 'bubble tea')
 sandwiches = Course.create(name: 'sandwiches')
 gelato = Course.create(name: 'gelato')
 
-kft = Restaurant.create(name: 'kung fun', address: 'Södergatan 5', city: 'Märsta', zipcode: '195 34', country: 'Sweden', max_distance: 3)
+kft = Restaurant.create(name: 'kung fun', address: 'Södergatan 5', 
+	city: 'Märsta', zipcode: '195 34', country: 'Sweden', 
+	max_distance: 3, logo: kftlogo)
 RestaurantCategory.create(restaurant: kft, category: italian)
 RestaurantCategory.create(restaurant: kft, category: coffee)
 RestaurantCourse.create(restaurant: kft, course: bubble_tea)
@@ -34,7 +36,9 @@ RestaurantCourse.create(restaurant: kft, course: gelato)
 taro = Item.create(name: 'taro', restaurant: kft, price: 5)
 red_bean = Item.create(name: 'red bean', restaurant: kft, price: 4)
 
-cb = Restaurant.create(name: 'caffe bene', address: 'Nymärstagatan 2', city: 'Märsta', zipcode: '195 30', country: 'Sweden', max_distance: 3)
+cb = Restaurant.create(name: 'caffe bene', address: 'Nymärstagatan 2', 
+	city: 'Märsta', zipcode: '195 30', country: 'Sweden', 
+	max_distance: 3, logo: cblogo)
 RestaurantCategory.create(restaurant: cb, category: coffee)
 RestaurantCourse.create(restaurant: cb, course: bubble_tea)
 RestaurantCourse.create(restaurant: cb, course: sandwiches)
@@ -46,7 +50,9 @@ ham_swiss = Item.create(name: 'ham and swiss', restaurant: cb, price: 6, course:
 mango = Item.create(name: 'mango', restaurant: cb, price: 4, course: gelato)
 
 
-shish = Restaurant.create(name: 'shish', address: 'Mjölnergatan 16', city: 'Märsta', zipcode: '195 53', country: 'Sweden', max_distance: 1)
+shish = Restaurant.create(name: 'shish', address: 'Mjölnergatan 16', 
+	city: 'Märsta', zipcode: '195 53', country: 'Sweden', 
+	max_distance: 1, logo: shishlogo)
 RestaurantCategory.create(restaurant: shish, category: subshop)
 RestaurantCourse.create(restaurant: shish, course: bubble_tea)
 RestaurantCourse.create(restaurant: shish, course: sandwiches)
