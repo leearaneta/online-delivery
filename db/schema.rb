@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(version: 20160916171127) do
     t.integer  "order_id"
     t.integer  "restaurant_id"
     t.integer  "course_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.boolean  "featured",      default: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
   create_table "order_items", force: :cascade do |t|

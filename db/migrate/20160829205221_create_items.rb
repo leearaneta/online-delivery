@@ -7,6 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.integer :order_id
       t.integer :restaurant_id
       t.integer :course_id
+      t.boolean :featured, default: false
 
       t.timestamps
     end

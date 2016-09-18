@@ -21,12 +21,13 @@ coffee = Category.create(name: 'coffee & tea',logo:'http://www.phoeniciafoods.co
 subshop = Category.create(name: 'subshop',logo:'http://waldopizzals.com/wp-content/uploads/2013/10/bigstock-Cold-Cuts-Sandwich-81314072-1.jpg')
 italian = Category.create(name: 'Italian',logo:'http://kassiesa.net/uefa/clubs/images/Italy@4.-old-logo.png')
 
+featured = Course.create(name: 'featured')
 bubble_tea = Course.create(name: 'bubble tea')
 sandwiches = Course.create(name: 'sandwiches')
 gelato = Course.create(name: 'gelato')
 
-kft = Restaurant.create(name: 'kung fun', address: 'Södergatan 5', 
-	city: 'Märsta', zipcode: '195 34', country: 'Sweden', 
+kft = Restaurant.create(name: 'kung fun', address: 'Södergatan 5',
+	city: 'Märsta', zipcode: '195 34', country: 'Sweden',
 	max_distance: 3, logo: kftlogo)
 RestaurantCategory.create(restaurant: kft, category: italian)
 RestaurantCategory.create(restaurant: kft, category: coffee)
@@ -36,22 +37,23 @@ RestaurantCourse.create(restaurant: kft, course: gelato)
 taro = Item.create(name: 'taro', restaurant: kft, price: 5)
 red_bean = Item.create(name: 'red bean', restaurant: kft, price: 4)
 
-cb = Restaurant.create(name: 'caffe bene', address: 'Nymärstagatan 2', 
-	city: 'Märsta', zipcode: '195 30', country: 'Sweden', 
+cb = Restaurant.create(name: 'caffe bene', address: 'Nymärstagatan 2',
+	city: 'Märsta', zipcode: '195 30', country: 'Sweden',
 	max_distance: 3, logo: cblogo)
 RestaurantCategory.create(restaurant: cb, category: coffee)
+RestaurantCourse.create(restaurant: cb, course: featured)
 RestaurantCourse.create(restaurant: cb, course: bubble_tea)
 RestaurantCourse.create(restaurant: cb, course: sandwiches)
 RestaurantCourse.create(restaurant: cb, course: gelato)
-thai = Item.create(name: 'thai', restaurant: cb, price: 4, course: bubble_tea)
+thai = Item.create(name: 'thai', restaurant: cb, price: 4, course: bubble_tea, featured: true)
 green_tea = Item.create(name: 'green tea', restaurant: cb, price: 3, course: bubble_tea)
-teriyaki = Item.create(name: 'teriyaki chicken', restaurant: cb, price: 7, course: sandwiches)
+teriyaki = Item.create(name: 'teriyaki chicken', restaurant: cb, price: 7, course: sandwiches, featured: true)
 ham_swiss = Item.create(name: 'ham and swiss', restaurant: cb, price: 6, course: sandwiches)
 mango = Item.create(name: 'mango', restaurant: cb, price: 4, course: gelato)
 
 
-shish = Restaurant.create(name: 'shish', address: 'Mjölnergatan 16', 
-	city: 'Märsta', zipcode: '195 53', country: 'Sweden', 
+shish = Restaurant.create(name: 'shish', address: 'Mjölnergatan 16',
+	city: 'Märsta', zipcode: '195 53', country: 'Sweden',
 	max_distance: 1, logo: shishlogo)
 RestaurantCategory.create(restaurant: shish, category: subshop)
 RestaurantCourse.create(restaurant: shish, course: bubble_tea)
