@@ -17,9 +17,9 @@ kftlogo = 'https://pbs.twimg.com/profile_images/478946624580767744/nmc8l9ig_400x
 cblogo = 'http://res.heraldm.com/content/image/2016/03/31/20160331001007_0.jpg'
 shishlogo = 'https://s-media-cache-ak0.pinimg.com/564x/a2/23/9a/a2239ad4939e4731b354aae7eee70f3b.jpg'
 
-coffee = Category.create(name: 'coffee & tea')
-subshop = Category.create(name: 'subshop')
-italian = Category.create(name: 'Italian')
+coffee = Category.create(name: 'coffee & tea',logo:'http://www.phoeniciafoods.com/wp-content/gallery/coffee-tea/15471-077.jpg')
+subshop = Category.create(name: 'subshop',logo:'http://waldopizzals.com/wp-content/uploads/2013/10/bigstock-Cold-Cuts-Sandwich-81314072-1.jpg')
+italian = Category.create(name: 'Italian',logo:'http://kassiesa.net/uefa/clubs/images/Italy@4.-old-logo.png')
 
 bubble_tea = Course.create(name: 'bubble tea')
 sandwiches = Course.create(name: 'sandwiches')
