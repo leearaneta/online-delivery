@@ -5,18 +5,16 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       command = AuthenticateUser.call(user_params[:email], user_params[:password])
-      render json: { auth_token: command.result, user: @user }, include: ['listings','communities','conversations','organizations']
+      render json: { auth_token: command.result, user: @user } 
     else
       render json: @user.errors
     end
   end
 
-
-
-  def show
-    @user = User.find(params[:id])
-    render json: @user, include: ['listings','organizations']
-  end
+  # def show
+  #   @user = User.find(params[:id])
+  #   render json: @user, include: ['listings','organizations']
+  # end
 
   def signin
     @user = User.find(params[:id])

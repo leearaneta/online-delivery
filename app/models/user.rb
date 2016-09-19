@@ -12,7 +12,4 @@ class User < ApplicationRecord
     "#{address}, #{zipcode} #{city}, #{country}"
   end
 
-  def restaurants
-  end
-
 end
