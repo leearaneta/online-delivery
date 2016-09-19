@@ -40,8 +40,7 @@ class UsersController < ApplicationController
   end
 
   def validate
-    # this needs to be fixed.. a user can technically change their email to another user's
-    if !User.find_by(email: user_params[:email])|| params[:header].present?
+    if !User.find_by(email: user_params[:email])
       render json: 'success', status: 200
     else
       render json: { error: 'User already exists' }, status: 401
