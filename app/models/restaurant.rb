@@ -11,5 +11,9 @@ class Restaurant < ApplicationRecord
   	"#{address}, #{zipcode} #{city}, #{country}"
   end
 
+  def course_ids
+    self.courses.pluck(:id)
+  end
+
 
 end
