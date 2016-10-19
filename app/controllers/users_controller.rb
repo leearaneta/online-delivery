@@ -1,11 +1,19 @@
 class UsersController < ApplicationController
   # skip_before_action :authenticate_request, only: [:create]
 
+  def check_if_deliverable
+    matrix = GoogleDistanceMatrix::Matrix.new
+    matrix.origins << GoogleDistanceMatrix::Place.new(address: address_params)
+    binding.pry
+    matrix.destinations << GoogleDistanceMatrix::Place.new(address: 'fagelvagen 13, marsta, sweden')
+    distance = matrix.data.flatten[0].distance_in_meters.to_f
+  end
+
   def create
     @user = User.new(user_params)
     if @user.save
       command = AuthenticateUser.call(user_params[:email], user_params[:password])
-      render json: { auth_token: command.result, user: @user } 
+      render json: { auth_token: command.result, user: @user }
     else
       render json: @user.errors
     end
