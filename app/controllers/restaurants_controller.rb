@@ -5,7 +5,7 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    restaurant = Restaurant.find(params['id'].to_i)
+    restaurant = Restaurant.find_by(name: params['id'])
     render json: restaurant, include: ['courses', 'items', 'items.types'], status: 200
   end
 
