@@ -1,13 +1,6 @@
 class UsersController < ApplicationController
   # skip_before_action :authenticate_request, only: [:create]
 
-  def check_if_deliverable
-    matrix = GoogleDistanceMatrix::Matrix.new
-    matrix.origins << GoogleDistanceMatrix::Place.new(address: params['address'])
-    matrix.destinations << GoogleDistanceMatrix::Place.new(address: 'fagelvagen 13, marsta, sweden')
-    distance = matrix.data.flatten[0].distance_in_meters.to_f
-  end
-
   def create
     @user = User.new(user_params)
     if @user.save
