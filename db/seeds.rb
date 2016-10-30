@@ -23,7 +23,7 @@ ItemType.destroy_all
 # csv_text = File.read(Rails.root.join('db', 'pizza.csv'))
 #
 
-Restaurant.create(name: 'Pizza Guy')
+Restaurant.create(name: 'Pizza Guy', address: 'Tingvallavägen 5', zipcode: '195 35', city: 'Märsta', country: 'Sweden', phone: '0859127600', max_distance: 50)
 
 CSV.foreach("#{Rails.root}/db/pizza.csv") do |row|
 	if row[0] != 'Course Name' && row[0].present?
