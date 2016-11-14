@@ -39,22 +39,11 @@ Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Prove
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Accapulco,"biff, färsk tomat, champinjoner, tacosås, lök, jalapeno, tacokrydda, tzatzikisås",Standard,105
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Favorita,"biff, ananas, paprika, gorgonzola, färsk basilika",Standard,100
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Fantasia,"biff, soltorkade tomater, zucchini, röd lök, oliver, färsk vitlök, färsk basilika, bearnaisesås",Standard,110
-"Kebabpizza
-Nötkött
-
-",,Kebabpizza,"kebab, pommes, vit sås, bearnaisesås.",Standard,90
-"Kebabpizza
-Nötkött
-
-",,Kebabpizza special,"kebab, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
-"Kebabpizza
-Nötkött
-
-",,Mixkebabpizza,"gyros, kebab, feferoni, rå lök, isbergsallad, stark tomatsås, vit sås, bearnaisesås.",Standard,105
-"Gyrospizza
-Fläskkarré",,Gyrospizza,"gyros, pommes, vit sås, bearnaisesås.",Standard,90
-"Gyrospizza
-Fläskkarré",,Gyrospizza special,"gyros, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
+Kebabpizza Nötkött,,Kebabpizza,"kebab, pommes, vit sås, bearnaisesås.",Standard,90
+Kebabpizza Nötkött,,Kebabpizza special,"kebab, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
+Kebabpizza Nötkött,,Mixkebabpizza,"gyros, kebab, feferoni, rå lök, isbergsallad, stark tomatsås, vit sås, bearnaisesås.",Standard,105
+Gyrospizza Fläskkarré,,Gyrospizza,"gyros, pommes, vit sås, bearnaisesås.",Standard,90
+Gyrospizza Fläskkarré,,Gyrospizza special,"gyros, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Small,105:-
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Medium,150:-
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Large,195:-
@@ -125,7 +114,3 @@ Pasta,,Al Pollo,"penne, kyckling, purjolök, zucchini, gräddsås",,90
 Pasta,,Chicken Alfredo,"spaghetti, kyckling, vitlökssmör, färsk persilja, parmesan, gräddsås",,100
 Pasta,,Biff Alfredo,"penne, biff, purjolök, oxfond, timjan, tomatpuré",,105
 Pasta,,Bolognese,"spaghetti, köttfärssås, parmesan",,85
-,,,,,
-,,Notering: hur vill du göra med numreringen efter pizzorna?,,,
-,,Det går inte att forsätta numreringen på den här sidan eftersom rutmönsterupplägget för tex en kycklingrulle eller en 150gr burgarmeny inte följer samma logiska flöde.,,,
-,,Räcker det om det bara är nummer på pizzorna?,,,
