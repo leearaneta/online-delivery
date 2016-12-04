@@ -39,11 +39,6 @@ Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Prove
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Accapulco,"biff, färsk tomat, champinjoner, tacosås, lök, jalapeno, tacokrydda, tzatzikisås.",Standard,105
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Favorita,"biff, ananas, paprika, gorgonzola, färsk basilika.",Standard,100
 Classic Pizza,Tunn botten grundad med vår tomatsås och nyriven goudaost.,Fantasia,"biff, soltorkade tomater, zucchini, röd lök, oliver, färsk vitlök, färsk basilika, bearnaisesås.",Standard,110
-Kebabpizza Nötkött,,Kebabpizza,"kebab, pommes, vit sås, bearnaisesås.",Standard,90
-Kebabpizza Nötkött,,Kebabpizza special,"kebab, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
-Kebabpizza Nötkött,,Mixkebabpizza,"gyros, kebab, feferoni, rå lök, isbergsallad, stark tomatsås, vit sås, bearnaisesås.",Standard,105
-Gyrospizza Fläskkarré,,Gyrospizza,"gyros, pommes, vit sås, bearnaisesås.",Standard,90
-Gyrospizza Fläskkarré,,Gyrospizza special,"gyros, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Small,105:-
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Medium,150:-
 American pan pizza,Härligt tjock botten grundad med vår tomatsås och nyriven mozzarellaost.,Angy Beef pan,"biff, champinjoner, broccoli, tabasco, färsk vitlök, jalapeno, bearnaisesås.",Large,195:-
@@ -78,6 +73,11 @@ New York style pizza,Grundad med vår tomatsås och nyriven mozzarellaost.,Salam
 New York style pizza,Grundad med vår tomatsås och nyriven mozzarellaost.,Salami lovers,"skinka, salami, champinjoner, paprika, färsk basilika.",Large,155
 New York style pizza,Grundad med vår tomatsås och nyriven mozzarellaost.,Bacon lovers,"ägg, bacon, lök, paprika, färsk basilika.",Medium,100
 New York style pizza,Grundad med vår tomatsås och nyriven mozzarellaost.,Bacon lovers,"ägg, bacon, lök, paprika, färsk basilika.",Large,150
+Kebabpizza Nötkött,,Kebabpizza,"kebab, pommes, vit sås, bearnaisesås.",Standard,90
+Kebabpizza Nötkött,,Kebabpizza special,"kebab, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
+Kebabpizza Nötkött,,Mixkebabpizza,"gyros, kebab, feferoni, rå lök, isbergsallad, stark tomatsås, vit sås, bearnaisesås.",Standard,105
+Gyrospizza Fläskkarré,,Gyrospizza,"gyros, pommes, vit sås, bearnaisesås.",Standard,90
+Gyrospizza Fläskkarré,,Gyrospizza special,"gyros, isbergsallad, rå lök, feferoni, tomat, gurka, stark tomatsås, vit sås.",Standard,95
 "Kebab, gyros, kyckling och falafel","Sallad, lök, tomat, feferoni, gurka, bröd, stark tomatsås, vit kebabsås.",Tallrik: pommes eller ris.,,Kebab,85
 "Kebab, gyros, kyckling och falafel","Sallad, lök, tomat, feferoni, gurka, bröd, stark tomatsås, vit kebabsås.",Tallrik: pommes eller ris.,,Gyros,90
 "Kebab, gyros, kyckling och falafel","Sallad, lök, tomat, feferoni, gurka, bröd, stark tomatsås, vit kebabsås.",Tallrik: pommes eller ris.,,Kyckling,90
@@ -95,10 +95,10 @@ New York style pizza,Grundad med vår tomatsås och nyriven mozzarellaost.,Bacon
 "Kebab, gyros, kyckling och falafel","Sallad, lök, tomat, feferoni, gurka, bröd, stark tomatsås, vit kebabsås.",Sallad,,Kyckling,90
 "Kebab, gyros, kyckling och falafel","Sallad, lök, tomat, feferoni, gurka, bröd, stark tomatsås, vit kebabsås.",Sallad,,Falafel,80
 Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Ost och skinka,"skinka, ananas, ägg.",Standard,90
-Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Räkor och avokado,"räkor, avokado, citron, sparris, ägg, Rhode Island-dressing.",,90
-Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Caesarsallad,"kyckling, bacon, krutonger, caesardressing.",,95
-Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Grekisk sallad,"fetaost, lök, oliver, linfrö, vinägrettdressing.",,90
-Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Tonfisksallad,"tonfisk, lök, citron, oliver, linfrö, vinägrettdressing.",,90
+Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Räkor och avokado,"räkor, avokado, citron, sparris, ägg, Rhode Island-dressing.",Standard,90
+Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Caesarsallad,"kyckling, bacon, krutonger, caesardressing.",Standard,95
+Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Grekisk sallad,"fetaost, lök, oliver, linfrö, vinägrettdressing.",Standard,90
+Sallad,"Romansallad, tomat, gurka, majs, champinjoner, paprika och bröd.",Tonfisksallad,"tonfisk, lök, citron, oliver, linfrö, vinägrettdressing.",Standard,90
 Hamburgare,"Sallad, lök, tomat, dressing, bostongurka, ketchup.",90g,,Bröd,50
 Hamburgare,"Sallad, lök, tomat, dressing, bostongurka, ketchup.",90g,,Pommes,60
 Hamburgare,"Sallad, lök, tomat, dressing, bostongurka, ketchup.",90g,,Meny,70
